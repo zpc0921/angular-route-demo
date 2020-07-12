@@ -1,0 +1,36 @@
+nz-header,
+nz-footer {
+  background: #ffffff;
+  color: #333333;
+  height: 48px;
+  padding: 0 12px;
+}
+
+.router-wrapper {
+  flex: 1;
+  display: flex;
+  color: #333;
+  height: 100%;
+  align-items: center;
+
+  .item {
+    height: 24px;
+    line-height: 24px;
+    cursor: pointer;
+    padding: 0 8px;
+    outline: none;
+  }
+
+  .item:hover {
+    color: #3ba0e9;
+  }
+
+  .item.active {
+    color: #3ba0e9;
+    border: none;
+  }
+
+  .item+.item {
+    border-left: 1px solid #bebebe;
+  }
+}

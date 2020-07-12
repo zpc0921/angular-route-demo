@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SideLayoutComponent } from './components/side-layout/side-layout.component';
 import {RouterModule} from '@angular/router';
+import {NzIconModule, NzLayoutModule} from 'ng-zorro-antd';
 
 
 
@@ -10,7 +11,9 @@ import {RouterModule} from '@angular/router';
   exports: [SideLayoutComponent],
   imports: [
     CommonModule,
-    RouterModule
+    RouterModule,
+    NzLayoutModule,
+    NzIconModule
   ]
 })
 export class ShareModule { }

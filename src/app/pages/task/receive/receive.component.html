@@ -1,2 +1,18 @@
-<p>receive works!</p>
-<router-outlet></router-outlet>
+<nz-layout>
+  <nz-header>
+    <div class="router-wrapper">
+      <span class="item" [routerLink]="'todo'" [routerLinkActive]="'active'">
+        待办
+      </span>
+      <span class="item" [routerLink]="'to-check'" [routerLinkActive]="'active'">
+        待验收
+      </span>
+      <span class="item" [routerLink]="'done'" [routerLinkActive]="'active'">
+        已完成
+      </span>
+    </div>
+  </nz-header>
+  <nz-content>
+    <router-outlet></router-outlet>
+  </nz-content>
+</nz-layout>

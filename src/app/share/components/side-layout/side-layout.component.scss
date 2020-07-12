@@ -1,0 +1,49 @@
+nz-sider {
+  background: #3ba0e9;
+  color: #fff;
+  height: 100vh;
+}
+
+.side-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  & > span {
+    display: inline-block;
+    height: 60px;
+    line-height: 60px;
+    flex-grow: 0;
+  }
+
+  .router-wrapper {
+    flex: 1;
+    width: 100%;
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 8px 0;
+      cursor: pointer;
+      outline: none;
+
+      & > i {
+        font-size: 28px;
+      }
+    }
+
+    .item:hover {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .item:active {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .item.active {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
+}

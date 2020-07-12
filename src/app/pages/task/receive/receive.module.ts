@@ -5,6 +5,7 @@ import {RouterModule} from '@angular/router';
 import { TodoComponent } from './todo/todo.component';
 import { ToCheckComponent } from './to-check/to-check.component';
 import { DoneComponent } from './done/done.component';
+import {NzLayoutModule} from 'ng-zorro-antd';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { DoneComponent } from './done/done.component';
           {path: 'done', component: DoneComponent},
         ]
       }
-    ])
+    ]),
+    NzLayoutModule
   ]
 })
 export class ReceiveModule { }

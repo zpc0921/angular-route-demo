@@ -1,2 +1,19 @@
-<p>side-layout works!</p>
-<router-outlet></router-outlet>
+<nz-layout>
+  <nz-sider [nzWidth]="80">
+    <div class="side-wrapper">
+      <span>logo</span>
+      <div class="router-wrapper">
+        <div class="item" routerLink="/task/receive" [routerLinkActive]="'active'">
+          <i nz-icon nzType="copy" nzTheme="outline"></i>
+          <span>我收到的</span>
+        </div>
+        <div class="item" routerLink="/task/create" [routerLinkActive]="'active'">
+          <i nz-icon nzType="snippets" nzTheme="fill"></i>
+          <span>我创建的</span>
+        </div>
+      </div>
+      <span>头像</span>
+    </div>
+  </nz-sider>
+  <nz-content><router-outlet></router-outlet></nz-content>
+</nz-layout>
