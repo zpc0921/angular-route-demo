@@ -17,11 +17,6 @@ import {NzLayoutModule} from 'ng-zorro-antd';
       {
         path: '',
         component: ReceiveComponent,
-        children: [
-          {path: 'todo', component: TodoComponent},
-          {path: 'to-check', component: ToCheckComponent},
-          {path: 'done', component: DoneComponent},
-        ]
       }
     ]),
     NzLayoutModule

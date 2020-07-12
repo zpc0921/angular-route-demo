@@ -16,10 +16,6 @@ import {ShareModule} from '../../share/share.module';
       {
         path: '',
         component: TaskComponent,
-        children: [
-          {path: 'create', loadChildren: () => import('./create/create.module').then(m => m.CreateModule)},
-          {path: 'receive', loadChildren: () => import('./receive/receive.module').then(m => m.ReceiveModule)}
-        ]
       }
     ])
   ]
